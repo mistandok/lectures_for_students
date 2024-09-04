@@ -7,10 +7,10 @@ def standard_logic_operation():
         2: "Ivan",
     }
 
-    print("list compare", bool(user_ids))
-    print("string compare", bool(name))
-    print("numbers compare", bool(user_id))
-    print("hash map compare", bool(users_name))
+    print("list compare", bool(user_ids), user_ids is True)
+    print("string compare", bool(name), name is True)
+    print("numbers compare", bool(user_id) is True)
+    print("hash map compare", bool(users_name) is True)
 
     user_ids = []
     name = ""
@@ -43,6 +43,8 @@ def int_example():
 
 if __name__ == "__main__":
     standard_logic_operation()
+    print()
     print(is_user_exists(1))
     print(is_user_exists(0))  # be careful with int values
+    print()
     int_example()
