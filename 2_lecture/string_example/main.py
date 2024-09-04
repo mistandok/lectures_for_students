@@ -34,14 +34,16 @@ def unicode_example():
     print()
     print("japan symbol", ord(japan_symbol))
 
+
 def utf8_example():
     japan_symbol = "ぁ"
-    alphabet = {char: char.encode() for char in string.ascii_lowercase}
-    alphabet_uppercase = {char: char.encode() for char in string.ascii_uppercase}
+    alphabet = {char: (char.encode(), len(char.encode())) for char in string.ascii_lowercase}
+    alphabet_uppercase = {char: (char.encode(), len(char.encode())) for char in string.ascii_uppercase}
     print("Unicode alphabet lowercase", *alphabet.items(), sep=" ")
     print("Unicode alphabet uppercase", *alphabet_uppercase.items(), sep=" ")
     print()
-    print("japan symbol", japan_symbol.encode(encoding="utf-8"))
+    print("japan symbol encoded len", japan_symbol.encode(encoding="utf-8"))
+    print("japan symbol encoded len", len(japan_symbol.encode(encoding="utf-8")))
     print("japan symbol decoded", japan_symbol.encode(encoding="utf-8").decode(encoding="utf-8"))
 
 
