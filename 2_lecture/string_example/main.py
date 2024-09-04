@@ -45,5 +45,12 @@ def utf8_example():
     print("japan symbol decoded", japan_symbol.encode(encoding="utf-8").decode(encoding="utf-8"))
 
 
+def f_string_example():
+    user_name = "amazing_user"
+    print(f"User name: {user_name}")
+
+
 if __name__ == "__main__":
     utf8_example()
+    print()
+    f_string_example()
