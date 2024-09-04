@@ -9,3 +9,6 @@
    - 
 
 3) начать рассказывать про типы данных
+
+Статьи:
+- https://habr.com/ru/companies/yandex_praktikum/articles/829208/ - условные операторы
