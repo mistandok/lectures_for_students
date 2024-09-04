@@ -19,6 +19,12 @@
 
 6) рассказать про for, while
 
+7) рассказать про list (ИЗМЕНЯЕМЫЙ ТИП, ПРИМЕРЫ НА ЭТО, экскурсия во внутрянку питончика, как устроен список, рассказать про алгоритмическую сложность операций)
+
+8) рассказать про tuple
+
+9) рассказать про dict
+
 Статьи:
 - https://habr.com/ru/companies/yandex_praktikum/articles/829208/ - условные операторы
 - https://naveenr.net/unicode-character-set-and-utf-8-utf-16-utf-32-encoding/ - кодировки

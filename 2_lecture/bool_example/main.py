@@ -9,8 +9,8 @@ def standard_logic_operation():
 
     print("list compare", bool(user_ids), user_ids is True)
     print("string compare", bool(name), name is True)
-    print("numbers compare", bool(user_id) is True)
-    print("hash map compare", bool(users_name) is True)
+    print("numbers compare", bool(user_id), user_id is True)
+    print("hash map compare", bool(users_name), users_name is True)
 
     user_ids = []
     name = ""
