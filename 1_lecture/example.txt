@@ -1,0 +1,9 @@
+What pyenv does...
+Lets you change the global Python version on a per-user basis.
+Provides support for per-project Python versions.
+Allows you to override the Python version with an environment variable.
+Searches for commands from multiple versions of Python at a time. This may be helpful to test across Python versions with tox.
+In contrast with pythonbrew and pythonz, pyenv does not...
+Depend on Python itself. pyenv was made from pure shell scripts. There is no bootstrap problem of Python.
+Need to be loaded into your shell. Instead, pyenv's shim approach works by adding a directory to your PATH.
+Manage virtualenv. Of course, you can create virtualenv yourself, or pyenv-virtualenv to automate the process.
