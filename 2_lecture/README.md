@@ -19,3 +19,4 @@
 - https://habr.com/ru/companies/yandex_praktikum/articles/829208/ - условные операторы
 - https://naveenr.net/unicode-character-set-and-utf-8-utf-16-utf-32-encoding/ - кодировки
 - https://realpython.com/python-f-strings/ - статья про f строки
+- https://habr.com/ru/companies/otus/articles/555924/ - оператор моржа 
