@@ -11,6 +11,8 @@ def assignment():
 
     print(names, age, symbol_codes)
 
+    print("length:", len(names))
+
 
 def safely_indexing(obj: list[T], idx: int) -> T:
     try:
