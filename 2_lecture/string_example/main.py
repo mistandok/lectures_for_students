@@ -1,3 +1,4 @@
+import random
 import string
 
 
@@ -23,6 +24,16 @@ def strings():
     print("split", sentence.split())
     print("join", "__".join(sentence.split()))
     print("replace", sentence.replace(" ", "__"))
+
+    print("index", sentence[0])
+    print("slice, even characters", sentence[::2])
+
+    print("sorting", "".join(sorted(sentence)))
+    print("sorting", sorted(sentence))
+    print("reverse", sentence[::-1])
+
+    print("title", sentence.title())
+    print("capitalize", sentence.capitalize())
 
 
 def unicode_example():
@@ -52,7 +63,14 @@ def f_string_example():
     print(f"User name: {user_name}")
 
 
+def format_string_example():
+    template = "Hello, {username}! Your age is {age}"
+    age = random.randint(1, 60)
+    username = "Anton"
+    print(template.format(age=age, username=username))
+
+
 if __name__ == "__main__":
-    utf8_example()
+    format_string_example()
     print()
     f_string_example()

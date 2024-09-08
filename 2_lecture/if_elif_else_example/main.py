@@ -123,6 +123,12 @@ def hard_operation_with_user(user_id: int) -> str:
     return "operation complete"
 
 
+def ternary_operator():
+    score = 20
+    result_by_score = "bad result" if score < 25 else "good result"
+    print(result_by_score)
+
+
 if __name__ == '__main__':
     examples()
     what_is_none()

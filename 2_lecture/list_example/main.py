@@ -56,9 +56,9 @@ def naming_for_slice():
     print("even names", names[even_elements])
 
 
-def interesting_example():
+def mutable_example(without_copy: bool = True):
     names = ["Anton", "Kolya", "Dima", "Ivan", "Petr", "Slava"]
-    another_names = names
+    another_names = names if without_copy else names[:]
 
     print("names", names)
     print("another names", another_names)
@@ -111,4 +111,4 @@ def operations():
 
 
 if __name__ == '__main__':
-    operations()
+    mutable_example(False)
