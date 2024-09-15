@@ -71,6 +71,4 @@ def format_string_example():
 
 
 if __name__ == "__main__":
-    format_string_example()
-    print()
-    f_string_example()
+    utf8_example()
