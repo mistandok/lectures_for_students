@@ -6,6 +6,7 @@
     - может быть передан функции в качестве аргумента
     - может быть возвращен функцией в качестве результата
 """
+from enum import Enum
 from typing import Callable
 
 
@@ -55,14 +56,20 @@ def call_assign_to_variable():
     new_variable("Anton")
 
 
+def power(a: int, b: int):
+    print("Результат возведения в степень", a**b)
+
+
+def summator(a: int, b: int):
+    print("Результат сложения", a+b)
+
+
+def divider(a: int, b: int):
+    print("Результат деления", a/b)
+
+
 def send_like_argument():
     """может быть передан функции в качестве аргумента."""
-    def summator(a, b):
-        print("Результат сложения", a+b)
-
-    def divider(a, b):
-        print("Результат деления", a/b)
-
     def pairs_action_execute(*number_pairs: tuple[int, int], action: Callable[[int, int], None]):
         for left, right in number_pairs:
             action(left, right)
@@ -73,5 +80,22 @@ def send_like_argument():
     pairs_action_execute(*pairs, action=divider)
 
 
+class ActionType(Enum):
+    POWER = 1
+    SUMMATOR = 2
+    DIVIDER = 3
+
+
+def return_from_function(action_type: ActionType) -> Callable[[int, int], None]:
+    """может быть возвращен функцией в качестве результата"""
+    action_map = {
+        ActionType.POWER: power,
+        ActionType.DIVIDER: divider,
+        ActionType.SUMMATOR: summator
+    }
+
+    return action_map[action_type]
+
+
 if __name__ == '__main__':
-    send_like_argument()
+    pass
