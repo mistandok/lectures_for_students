@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 4,
+      "name": "Oleg",
+      "skills": ["movie maker"],
+      "salary": 100
+    },
+    {
+      "id": 5,
+      "name": "Ilya",
+      "skills": ["race"],
+      "salary": 100
+    },
+    {
+      "id": 6,
+      "name": "Victor",
+      "skills": ["football"],
+      "salary": 100
+    }
+  ]
+}

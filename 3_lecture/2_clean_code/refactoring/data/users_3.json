@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": 7,
+      "name": "Mariya",
+      "skills": ["dancer", "cook"],
+      "salary": 100
+    }
+  ]
+}
