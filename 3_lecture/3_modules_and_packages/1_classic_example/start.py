@@ -4,6 +4,7 @@ from my_collections.my_set import MySet
 if __name__ == '__main__':
     my_dict = MyDict()
     my_dict.add("hello", 1)
+    my_dict.add("hello", 1)
     my_dict.add("world", 2)
     my_dict.add("Anton", 3)
 
