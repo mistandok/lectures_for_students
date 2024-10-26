@@ -88,14 +88,16 @@ def description_for_pair(pair: Pair) -> str:
 
 
 def is_full_pair(pair: Pair):
-    return pair.first and pair.second
+    return all(pair)
 
 
 def count_superhero_in_pair(pair: Pair):
-    if is_full_pair(pair):
-        return sum([int(user.superhero) for user in pair])
+    count = 0
+    for user in pair:
+        if user and user.superhero:
+            count += 1
 
-    return int(pair.first.superhero)
+    return count
 
 
 if __name__ == '__main__':

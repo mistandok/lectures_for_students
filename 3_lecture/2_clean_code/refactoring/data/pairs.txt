@@ -1,8 +1,8 @@
-User Anton and Nastya in pair.Count superhero: 1
+User Anton and Nastya in pair. Count superhero: 1
 
-User Igor and Oleg in pair.Count superhero: 0
+User Igor and Oleg in pair. Count superhero: 0
 
-User Ilya and Victor in pair.Count superhero: 0
+User Ilya and Victor in pair. Count superhero: 0
 
-User Mariya solo. Count superhero: 1
+User Mariya solo Count superhero: 1
 
