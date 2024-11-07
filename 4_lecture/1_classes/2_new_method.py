@@ -2,6 +2,7 @@ class Logger:
     # Создание экземпляра
     def __new__(cls, name: str) -> "Logger":
         print("Inside __new__ method")
+        print(f"Cls is it {type(cls)} {cls}")
         instance = super().__new__(cls)
         print(f"Instance is {instance} with type {type(instance)}")
         return instance
