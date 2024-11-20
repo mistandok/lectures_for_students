@@ -57,6 +57,7 @@ def get_user_description(user_client: UserClient) -> str:
         return ""
 
     if responce.user is None:
+        print("какая-то ошибка на стороне сервиса пользователей")
         return ""
 
     if responce.user.balance == 0:
