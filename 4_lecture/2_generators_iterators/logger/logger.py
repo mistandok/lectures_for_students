@@ -8,6 +8,9 @@ class Logger:
     def __init__(self, storage: Storage):
         self._storage = storage
 
+    def walk(self):
+        return self._storage.walk()
+
     def error(self, msg: str, with_tb: bool = False):
         self._add_log(LogType.ERROR, msg, with_tb)
 

@@ -1,4 +1,4 @@
-from typing import Protocol
+from typing import Generator, Protocol
 
 from .entity import LogContent
 
@@ -11,6 +11,9 @@ class Storage(Protocol):
         pass
 
     def get_by_id(self, idx: int) -> LogContent:
+        pass
+
+    def walk(self) -> Generator[LogContent, None, None]:
         pass
 
 
@@ -26,3 +29,7 @@ class MemSotrage:
 
     def get_by_id(self, idx: int) -> LogContent:
         return self._data[idx]
+
+    def walk(self) -> Generator[LogContent, None, None]:
+        for log in self._data:
+            yield log
