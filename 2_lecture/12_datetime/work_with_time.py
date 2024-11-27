@@ -44,7 +44,9 @@ def from_str_custom_format():
 
 
 def operations_with_date():
-    new_year = datetime.datetime(year=2025, month=1, day=1, hour=0, minute=0, microsecond=0, tzinfo=datetime.UTC)
+    new_year = datetime.datetime(
+        year=2025, month=1, day=1, hour=0, minute=0, microsecond=0, tzinfo=datetime.UTC
+    )
     time_to_new_year = new_year - datetime.datetime.now(tz=datetime.UTC)
     print("Time to New Year", time_to_new_year)
     print("What is type?", type(time_to_new_year))
@@ -55,9 +57,9 @@ def operations_with_date():
 
     for _ in range(4):
         now = now + one_week_delta
-        print("Next week",  now)
+        print("Next week", now)
         print("Type", type(now))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     operations_with_date()
