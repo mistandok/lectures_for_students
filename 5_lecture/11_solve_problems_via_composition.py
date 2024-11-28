@@ -5,6 +5,10 @@ from typing import Protocol
 
 from logger.entity import LogContent, LogType
 
+# ====================================
+# formatter
+# ====================================
+
 
 class TextFormatter(Protocol):
     def format(self, text: str) -> str:
@@ -24,6 +28,11 @@ class CapitalizeFormatter:
 class TitleFormatter:
     def format(self, text: str) -> str:
         return text.title()
+
+
+# ====================================
+# Storage
+# ====================================
 
 
 class Storage(Protocol):
@@ -99,6 +108,11 @@ class TxtStorage:
             file.write(f"cur_time: {log_content.cur_time}\n")
             file.write(f"traceback: {log_content.traceback}\n")
             file.write(f"----\n")
+
+
+# ====================================
+# Logger
+# ====================================
 
 
 class Logger:
